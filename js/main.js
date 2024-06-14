@@ -740,3 +740,26 @@
 
 
 })(jQuery);
+
+//JS code for Receive message from user 
+const btn = document.getElementById('button');
+const form = document.getElementById('form');
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  btn.innerText = 'Sending...';
+
+  const serviceID = 'default_service';
+  const templateID = 'template_ittssdi';
+
+  emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Message';
+      alert('Great news! 🎉 Your message has been sent successfully! ✉️🚀');
+      location.reload();
+    }
+    ,(err) => {
+      btn.value = 'Send Message';
+      alert(JSON.stringify(err));
+    });
+});
