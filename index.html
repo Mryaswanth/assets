@@ -919,12 +919,16 @@
                         <div class="subscribe-content">
                             <h2 class="title">if you need any information</h2>
                             <p>Could you clarify what information you're referring to? If there's something specific you'd like to correct or update, just let me know!</p>
-                            <form class="subscribe-form">
-                                <label class="subscribe-icon"><img src="icon/icon-7.png" alt="icon"></label>
-                                <input type="text" class="form--control" placeholder="Email Address">
+                           <form class="subscribe-form" name="form" id="form">
+
+                                <input type="email" id="email"  name="email" class="form--control"
+                                    placeholder="Email Address">
+                                <label for="email" class="subscribe-icon"><img src="icon/icon-7.png" alt="icon"></label>
                                 <br><br>
-                                <textarea  class="form--control" placeholder="Message" cols="30" rows="10"></textarea>
-                               <button type="submit" class="btn--base">Send  Message</button>
+                                <textarea class="form--control" id="message" name="message"  required
+                                    placeholder="Message" cols="30" rows="10" ></textarea>
+                                <button type="submit" class="btn--base" id="button"  name="button"
+                                    value="Send Message">Send Message</button>
                             </form>
                         </div>
                     </div>
