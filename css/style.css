@@ -16921,7 +16921,7 @@ div[class*=col]:nth-of-type(3n + 3) .process-item.two::after {
     width: 65px; /* Adjust width and height based on your image size */
     height: 65px;
     display: block;
-    background-image: url('bot.jpg'); /* Replace with your image path */
+    background-image: url('/bot.jpg'); /* Replace with your image path */
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%; /* Makes the button circular */
@@ -16949,8 +16949,8 @@ div[class*=col]:nth-of-type(3n + 3) .process-item.two::after {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .unique-button {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
         bottom: 9%;
         left: 3%;
     }
