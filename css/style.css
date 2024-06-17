@@ -16917,7 +16917,7 @@ div[class*=col]:nth-of-type(3n + 3) .process-item.two::after {
 .unique-button {
     position: fixed;
     bottom: 15%; /* Adjusted to position the button slightly above the bottom */
-    right: 1.5%; /* Adjusted to position the button slightly from the left */
+    right: 1.4%; /* Adjusted to position the button slightly from the left */
     width: 65px; /* Adjust width and height based on your image size */
     height: 65px;
     display: block;
@@ -16951,7 +16951,7 @@ div[class*=col]:nth-of-type(3n + 3) .process-item.two::after {
     .unique-button {
         width: 55px;
         height: 55px;
-        bottom: 20%;
-        right: 23px;
+        bottom: 22%;
+        right: 27px;
     }
 }
