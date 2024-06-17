@@ -16916,11 +16916,10 @@ div[class*=col]:nth-of-type(3n + 3) .process-item.two::after {
 }
 .unique-button {
     position: fixed;
-    bottom: 20px; /* Adjusted to position the button slightly above the bottom */
-    left:20px ;
-    right: 20px;
-    width: 60px; /* Adjust width and height based on your image size */
-    height: 60px;
+    bottom: 5%; /* Adjusted to position the button slightly above the bottom */
+    left: 5%; /* Adjusted to position the button slightly from the left */
+    width: 65px; /* Adjust width and height based on your image size */
+    height: 65px;
     display: block;
     background-image: url('bot.jpg'); /* Replace with your image path */
     background-size: cover;
@@ -16930,12 +16929,12 @@ div[class*=col]:nth-of-type(3n + 3) .process-item.two::after {
     box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.2s, box-shadow 0.3s;
     z-index: 999; /* Ensure the button stays in front */
+    animation: bounce 3s infinite ease-in-out; /* Apply bounce animation */
 }
 
 .unique-button:hover {
     transform: translateY(-2px);
     box-shadow: 0px 8px 12px rgba(0,0,0,0.1);
-    animation: bounce 1s infinite ease-in-out; /* Apply bounce animation */
 }
 
 @keyframes bounce {
@@ -16944,5 +16943,15 @@ div[class*=col]:nth-of-type(3n + 3) .process-item.two::after {
     }
     50% {
         transform: translateY(-10px);
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .unique-button {
+        width: 60px;
+        height: 60px;
+        bottom: 9%;
+        left: 3%;
     }
 }
