@@ -16926,7 +16926,7 @@ div[class*=col]:nth-of-type(3n + 3) .process-item.two::after {
     background-repeat: no-repeat;
     border-radius: 50%; /* Makes the button circular */
     border: none;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    /*box-shadow: 0px 4px 6px rgba(0,0,0,0.1);*/
     transition: transform 0.2s, box-shadow 0.3s;
     z-index: 999; /* Ensure the button stays in front */
     animation: bounce 3s infinite ease-in-out; /* Apply bounce animation */
