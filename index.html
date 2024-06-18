@@ -1208,7 +1208,7 @@ function closePopup() {
 
         if (className.includes("bot-message")) {
             const imageElement = document.createElement("img");
-            imageElement.src = "{{ url_for('static', filename='robot.png') }}";
+            imageElement.src = /static/robot.png;
             imageElement.alt = "Robot";
             imageElement.className = "robot-icon";
             messageElement.appendChild(imageElement);
