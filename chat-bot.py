@@ -11,7 +11,7 @@ from langchain.chains import RetrievalQA
 
 import os
 
-app = Flask(__name__, static_folder='static')
+app = Flask(__name__, template_folder='templates', static_folder='static')
 
 google = GooglePalm(google_api_key=os.getenv("GOOGLE_API_KEY"), temperature=0.0)
 embeddings_new = GooglePalmEmbeddings(google_api_key=os.getenv("GOOGLE_API_KEY"))
