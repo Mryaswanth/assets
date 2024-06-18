@@ -1,11 +1,16 @@
 {
-    "name": "assets",
     "version": 2,
-    "builds": [{
-        "src": "*py",
+    "builds": [
+      {
+        "src": "chatbot.py",
         "use": "@vercel/python"
-    }],
+      }
+    ],
     "routes": [
-        { "src": "(.*)", "dest": "chatbot.py" }
+      {
+        "src": "/(.*)",
+        "dest": "chatbot.py"
+      }
     ]
- }
+  }
+  
