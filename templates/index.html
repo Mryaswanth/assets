@@ -7,37 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giant Wolfs - The Best Solution For Software</title>
    <script src="static/anime.min.js"></script>
-   <link rel="stylesheet" href="/static/quicksand-font.css">
-   <link rel="stylesheet" href="/static/style.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='quicksand-font.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!-- fontawesome css link -->
-    <link rel="stylesheet" href ="/static/fontawesome-all.min.css">
+    <link rel="stylesheet" href ="{{ url_for('static', filename='fontawesome-all.min.css') }}">
     <!-- bootstrap css link -->
-    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
     <!-- favicon -->
     <link rel="shortcut icon" href="/static/IMG_20240528_204648_624.webp" type="image/x-icon">
     <!-- swipper css link -->
-    <link rel="stylesheet" href="/static/swiper.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='swiper.min.css') }}">
     <!-- lightcase css links -->
-    <link rel="stylesheet" href="/static/lightcase.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lightcase.css') }}">
     <!-- odometer css link -->
-    <link rel="stylesheet" href="/static/odometer.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='odometer.css') }}">
     <!-- line-awesome-icon css -->
-    <link rel="stylesheet" href="/static/icomoon.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='icomoon.css') }}">
     <!-- line-awesome-icon css -->
-    <link rel="stylesheet" href="/static/line-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='line-awesome.min.css') }}">
     <!-- animate.css -->
-    <link rel="stylesheet" href= "/static/animate.css">
+    <link rel="stylesheet" href= "{{ url_for('static', filename='animate.css') }}">
     <!-- aos.css -->
-    <link rel="stylesheet" href="/static/aos.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='aos.css') }}">
     <!-- nice select css -->
     <!-- nice select css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
-    <link rel="stylesheet" href="/static/nice-select.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nice-select.css') }}">
     <!-- main style css link -->
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
@@ -1129,7 +1129,7 @@ function closePopup() {
       <span class="close" onclick="closePopup()">&times;</span>
       <div id="chat-container">
         <div id="header">
-            <img src="/static/logo.png" alt="Company Logo" id="company-logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Company Logo" id="company-logo">
             <span>GW Chatbot</span>
         </div>
         <div id="messages"></div>
