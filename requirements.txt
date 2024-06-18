@@ -1,9 +1,0 @@
-Flask
-request
-CSVLoader
-GooglePalmEmbeddings
-RecursiveCharacterTextSplitter
-FAISS
-PromptTemplate
-RetrievalQA
-os
