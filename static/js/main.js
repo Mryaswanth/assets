@@ -741,6 +741,7 @@
 
 })(jQuery);
 
+
 //JS code for Receive message from user 
 const btn = document.getElementById('button');
 const form = document.getElementById('form');
