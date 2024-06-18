@@ -1,0 +1,8 @@
+Flask
+CSVLoader
+GooglePalmEmbeddings
+RecursiveCharacterTextSplitter
+FAISS
+PromptTemplate
+RetrievalQA
+os
